@@ -1,0 +1,185 @@
+.Page-landing{
+    width:100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: var(--color-primary);
+    color: var(--color-text-in-primary);
+
+}
+.black{
+    width:100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: black;
+    color: var(--color-text-in-primary);
+}
+
+.logo-container img{
+    width: 18rem;
+    grid-area: logo;
+}
+
+.hero-image{
+    width: 100%;
+    grid-area: hero;
+}
+
+.logo-container{
+    text-align: center;
+    margin-bottom: 0;
+    
+}
+
+.logo-container h2{
+    font-weight: 500;
+    font-size:1.4rem;
+    margin-top: 0.8rem;
+    line-height: 4.6rem;
+
+}
+.buttons-container{
+    display: flex;
+    justify-content: center;
+    margin: 3.2rem 0;
+    grid-area:buttons;
+}
+.buttons-container a {
+    width: 28rem;
+    height: 10.4rem;
+    border-radius: 0.8rem;
+    
+    font:700 2.0rem Archivo;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    text-decoration: none;
+    color: var(--color-button-text);
+
+    transition: background-color 0.2s;
+}
+.buttons-container a:first-child{margin-right:1.6rem;}
+
+.buttons-container a img{
+    width: 4rem;
+}
+
+.buttons-container a.study{
+    background-color: var(--color-primary-lighter);
+}
+.buttons-container a.give-classes{
+    background-color: var(--color-secundary)
+}
+
+
+.buttons-container a.study:hover{
+    background-color: var(--color-primary-light);
+}
+.buttons-container a.give-classes:hover{
+    background-color: var(--color-secundary-dark)
+}
+
+.total-connections{
+    font-size: 1.4rem;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    grid-area:total;
+}
+
+.heart{
+    margin-right: 0.8rem;
+}
+.container-toogle button{
+    background: none;
+    border: 0;
+}
+.coruja{
+    width:20rem;
+     height:14rem;
+}
+@media(min-width:1100px){
+    #page-landing-content{
+        max-width: 1100px;
+        display: grid;
+        grid-template-rows: 2fr 1fr ;
+        grid-template-columns: 2fr 300px 1fr;
+        grid-template-areas: 
+                            'logo hero hero'
+                             'buttons buttons total' ;
+    }
+    .hero-image{
+        grid-area: hero;
+    }
+
+    .logo-container {
+        grid-area: logo;
+    }
+    .container-lampada{
+        grid-area: i;
+    }
+    .container-lampada button{
+        background: none;
+        border: 0;
+    }
+
+    .logo-container h2 {
+        text-align: center;
+        font-size: 2.1rem;
+        
+    }
+    .logo-container img {
+       width: 24rem;
+       height: 70%;
+       margin: 0;    
+
+    }
+    .buttons-container{
+        display: flex;
+        justify-content: center;
+        margin: 3.2rem 0;
+        grid-area:buttons;
+        justify-content: flex-start;
+    }
+    .buttons-container a{
+        width: 28rem;
+        height: 6.5rem;
+        font-size: 1.9rem;
+    }
+    .total-connections{
+        grid-area:total;
+        font-size: 1.4rem;
+        justify-self: end;
+    }
+    .coruja{
+        margin-top: 70px;
+        width:449px !important ;
+        height:127px !important;
+    }
+    .logo-container{
+        margin-top: 80px;
+    }
+}
+
+
+.switch__container button{
+    background: none;
+    border: 0;
+    box-shadow: 0;
+    
+}
+.switch__container{
+    display: absolute !important; 
+    left: 75rem;
+    top: 2rem;
+}
