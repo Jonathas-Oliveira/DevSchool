@@ -5,7 +5,7 @@
 - TypeScript
 
 ### Consuming API of GitHub
-#### Automaning search for link of avatar and Bio, with just one click. 
+#### Automaning search for link of avatar and Bio, with just one click
 ![automatizaçao](https://user-images.githubusercontent.com/68708850/90299914-645ff300-de6e-11ea-9fac-da07af5257a6.gif)
 
 
